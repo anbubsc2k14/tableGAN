@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 echo "Adult Data Sets"
-python main.py --train --dataset=Adult --epoch=5 --test_id=OI_11_00
+python tableGAN/main.py --train --dataset=tableGAN/Adult --epoch=5 --test_id=OI_11_00
