@@ -173,7 +173,7 @@ def main(_):
             print('Time Elapsed: ')
             b = datetime.datetime.now()
             print(b - a)
-
+    print("Main complete")
 
 if __name__ == '__main__':
     tf.compat.v1.app.run()

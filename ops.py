@@ -145,4 +145,4 @@ def masking(input, label_col, attrib_num):
     temp = tf.where(inp_mask, temp, tf.zeros_like(temp))
 
     return tf.reshape(temp, i_shape)
-    
+print("ops complete")    
