@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """
 Paper: http://www.vldb.org/pvldb/vol11/p1071-park.pdf
 Authors: Mahmoud Mohammadi, Noseong Park Adopted from https://github.com/carpedm20/DCGAN-tensorflow
