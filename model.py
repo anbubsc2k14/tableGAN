@@ -811,8 +811,10 @@ class TableGan(object):
     def load_tabular_data(self, dataset_name, dim, classes=2, test_id='', load_fake_data=False):
 
         # self.train_data_path = f"./data/{dataset_name}/{dataset_name}"
-        self.train_data_path = f'data/{dataset_name}/{dataset_name}'
-        self.train_label_path = f'data/{dataset_name}/{dataset_name}_labels'
+        #self.train_data_path = f'data/{dataset_name}/{dataset_name}'
+        #self.train_label_path = f'data/{dataset_name}/{dataset_name}_labels'
+        self.train_data_path = f'data/{dataset_name}'
+        self.train_label_path = f'data/{dataset_name}_labels'
         print(self.train_data_path)
         if os.path.exists(self.train_data_path + ".csv"):
             print("Step1")
