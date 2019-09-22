@@ -813,8 +813,8 @@ class TableGan(object):
         # self.train_data_path = f"./data/{dataset_name}/{dataset_name}"
         #self.train_data_path = f'data/{dataset_name}/{dataset_name}'
         #self.train_label_path = f'data/{dataset_name}/{dataset_name}_labels'
-        self.train_data_path = f'data/{dataset_name}'
-        self.train_label_path = f'data/{dataset_name}_labels'
+        self.train_data_path = f'{dataset_name}'
+        self.train_label_path = f'{dataset_name}_labels'
         print(self.train_data_path)
         if os.path.exists(self.train_data_path + ".csv"):
             print("Step1")
