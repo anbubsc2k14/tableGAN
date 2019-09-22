@@ -815,7 +815,7 @@ class TableGan(object):
         self.train_label_path = f'data/{dataset_name}/{dataset_name}_labels'
 
         if os.path.exists(self.train_data_path + ".csv"):
-
+            print("Step1")
             X = pd.read_csv(self.train_data_path + ".csv", sep=';')
             print("Loading CSV input file : %s" % (self.train_data_path + ".csv"))
 
@@ -823,16 +823,18 @@ class TableGan(object):
 
             if self.y_dim:
                 y = np.genfromtxt(open(self.train_label_path + ".csv", 'r'), delimiter=',')
-
+                print("Step2")
                 print("Loading CSV input file : %s" % (self.train_label_path + ".csv"))
 
                 self.zero_one_ratio = 1.0 - (np.sum(y) / len(y))
 
         elif os.path.exists(self.train_data_path + ".pickle"):
+            print("Step3")
             with open(self.train_data_path + '.pickle', 'rb') as handle:
                 X = pickle.load(handle)
 
             with open(self.train_label_path + '.pickle', 'rb') as handle:
+                print("Step4")
                 y = pickle.load(handle)
 
             print("Loading pickle file ....")
